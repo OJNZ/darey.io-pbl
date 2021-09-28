@@ -43,4 +43,15 @@ to store and manage data for my site i then had to install a database management
   
   ENABLE PHP ON THE WEBSITE
   
+  In order to change the order in which the index.php file is listed within the DirectoryIndex directive I edited the /etc/apache2/mods-enabled/dir.conf file by using the command below
+
+sudo vim /etc/apache2/mods-enabled/dir.conf.
+  
+  once in the text editor i changed this DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm into this: DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+  
+  once the apache2 file was reloaded and the PHP code (<?php
+phpinfo();)  added inside the index.php file  the following site was produced.
+  ![Screenshot 2021-09-08 at 22 07 37 (2)](https://user-images.githubusercontent.com/87572884/135012452-41678a9a-505c-4a0c-90d2-31a0652aafc8.png)
+
+This page provides information about your server from the perspective of PHP.
   
