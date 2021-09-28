@@ -29,3 +29,18 @@ to store and manage data for my site i then had to install a database management
   i then ran the command 'php -v' to confirm the PHP version. 
   
   I then wanted to test the LAMP setup by setting up a apache virtual host to hold the websites files and folders. 
+  I first had to creat the directory projectlamp and assign ownership of it to the current user. 
+  ![Screenshot 2021-09-08 at 22 09 21](https://user-images.githubusercontent.com/87572884/135008266-edc7b5d6-9fba-40b8-84b0-8fb7e7ff2ef9.png)
+
+  I then had to use the text editor command Vi to create and open a configuaration file in apache's site available directory. In this new file i was telling Apache to serve projectlamp using /var/www/projectlampl as its web root directory. 
+  
+  ![Screenshot 2021-09-08 at 22 09 58](https://user-images.githubusercontent.com/87572884/135010043-e004348d-ebc5-4c47-be87-0528013be725.png)
+
+  I then useed a2ensite command to enable the virtual host but had to disable the default website that came installed with Apache, as i was not using a custome domain name.
+  I then made usre the config file didnt have syntax errors and reloaded apache to activate the new changes. 
+  this produced the website 
+  ![image](https://user-images.githubusercontent.com/87572884/135011291-8cc13ccc-98aa-4817-8edf-b94f7690e377.png)
+  
+  ENABLE PHP ON THE WEBSITE
+  
+  
